@@ -65,7 +65,7 @@ def load_model():
         model="hamzab/roberta-fake-news-classification",
         truncation=True,
         max_length=512,
-        return_all_scores=True  # get scores for ALL labels so we can compare them
+        top_k=None  # get scores for ALL labels so we can compare them
     )
 
 # ── Rule-based signal detector ─────────────────────────────────────────────────
